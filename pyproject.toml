@@ -1,0 +1,18 @@
+[tool.poetry]
+name        = "retis"
+version     = "0.1.0"
+description = "Modular Network Generator"
+readme      = "README.md"
+authors     = ["Edgar Masagué"]
+packages    = [{ include = "retis" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.scripts]
+retis = "retis.app:main"
+
+[build-system]
+requires      = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
